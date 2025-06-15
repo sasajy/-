@@ -1,6 +1,6 @@
 import streamlit as st
 from collections import deque
-st.set_page_config(layout="wide")  # ← これが最重要
+st.set_page_config(layout="wide") 
 
 # ページ幅CSS
 st.markdown("""
@@ -121,13 +121,13 @@ st.subheader("おまけ")
 st.caption("以下で各 Brainfuck コマンドに対応する記号を設定")
 
 symbol_map = {}
-default_symbols = ["新手のスタンド使いか！", "ハーミットパープル", "スターフィンガー！", "ロードローラーだ！", "オラ", "無駄", "あ…ありのまま 今　起こった事を話すぜ！", "ザ・ワールド！"]
+default_symbols = ["ピュー", "パガン", "トゥングー", "コンバウン", "ピューパガン！", "トゥングーコンバウン！", "ピューパガントゥングーコンバウン！！", "シャキーン"]
 command_names = [",", ".", ">", "<", "+", "-", "[", "]"]
 
 cols = st.columns(8)
 for i, cmd in enumerate(command_names):
     with cols[i]:
-        symbol = st.text_input(f"　{cmd} ", value=default_symbols[i], max_chars=3, key=f"symbol_{cmd}")
+        symbol = st.text_input(f"　{cmd} ", value=default_symbols[i], max_chars=20, key=f"symbol_{cmd}")
         symbol_map[cmd] = symbol
 
 # 2. 入力テキスト

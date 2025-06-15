@@ -122,7 +122,7 @@ st.caption("以下で各 Brainfuck コマンドに対応する記号を設定")
 
 symbol_map = {}
 default_symbols = ["ピュー", "パガン", "トゥングー", "コンバウン", "ピューパガン！", "トゥングーコンバウン！", "ピューパガントゥングーコンバウン！！", "シャキーン"]
-command_names = [",", ".", ">", "<", "+", "-", "[", "]"]
+command_names = ["+", "-", ">", "<", ",", ".", "[", "]"]
 
 cols = st.columns(8)
 for i, cmd in enumerate(command_names):
